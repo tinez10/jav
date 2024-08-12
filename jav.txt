@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+class Room {
+    String description;
+    Room north, south, east, west;
+    Item item;
+
+    
+}
+
+class Player {
+    int health;
+    ArrayList<Item> inventory;
+    Room currentRoom;
+
+  
+}
+
+class Item {
+    String name;
+    String description;
+
+   
+}
+
+class Game {
+    Player player;
+    Room startRoom;
+
+    void play() {
+       
+        while (true) {
+            System.out.println(player.currentRoom.description);
+           
+        }
+    }
+
+    public static void main(String[] args) {
+        Game game = new Game();
+        game.play();
+    }
+}
